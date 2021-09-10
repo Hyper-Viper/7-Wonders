@@ -1,0 +1,104 @@
+*{
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: url("background.jpg");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    display: inline-block;
+}
+
+#navbar a{
+    font-size: 18px;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    animation: hover 0.2s forwards;
+}
+
+#navbar a:not(:hover){
+    animation: unhover 0.2s forwards;
+}
+
+#navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 48;
+    width: 100%;
+    text-align: left;
+}
+
+.monument{
+    width: 100%;
+    margin: 0;
+}
+
+.monument p{
+    font-size: 17px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.monuments{
+    width: calc(100% - 17px);
+    margin: 0;
+}
+
+.monuments img, .monument img{
+    width: 750px;
+}
+
+.monuments h1, .monument h1{
+    margin-top: 48px;
+}
+
+.monuments p{
+    font-size: 17px;
+    width: 800px;
+}
+
+.monuments h3, .monument h3{
+    margin-top: 9px;
+}
+
+.more{
+    color: #0000EE;
+}
+
+@keyframes hover{
+    from{
+        background-color: transparent;
+        color: #c8c8c8;
+    }
+    to{
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFFFFF;
+    }
+}
+
+@keyframes unhover{
+    from{
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFFFFF;
+    }
+    to{
+        background-color: transparent;
+        color: #c8c8c8;
+    }
+}
